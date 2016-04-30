@@ -1,0 +1,18 @@
+body{
+	height: auto;
+}
+.profile{
+	margin: 18% auto 0;
+}
+.userName{
+	margin-bottom: 18%;
+	font-size: 18px;
+	color: #575757;
+}
+.aui-list-view{
+	text-align: left;
+}
+.aui-btn.aui-btn-success.aui-btn-block{
+	margin: 22% auto 0;
+	width: 90%;
+}

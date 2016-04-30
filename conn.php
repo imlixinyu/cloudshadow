@@ -1,18 +1,12 @@
-<?php 
-session_start();
-//echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />";
-	@$link=mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT,SAE_MYSQL_USER,SAE_MYSQL_PASS);
+<!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" /> -->
+<?php
 
-	// 连从库
-	// $link=mysql_connect(SAE_MYSQL_HOST_S.':'.SAE_MYSQL_PORT,SAE_MYSQL_USER,SAE_MYSQL_PASS);
-
-	if($link)
-	{
-    	mysql_select_db(SAE_MYSQL_DB,$link);
-    	//your code goes here
-        //echo "数据库正常！";
-	}
+	$LOGIN="users";
+	//$ONLINE="`online`";
+	@mysql_connect("localhost", "root", "114722") or die("404-mysql连接失败");
+	@mysql_select_db("yunying") or die("数据库连接失败");
 	mysql_set_charset("utf8");
+    date_default_timezone_set('PRC');
 	mysql_query("set names 'utf8'");
 	//echo "数据库正常！";
 ?>

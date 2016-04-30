@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>添加朋友圈</title>
+	<link rel="stylesheet" type="text/css" href="../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../css/aui-indexed-list.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/locate.css">
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<header class="aui-bar aui-bar-nav aui-bar-success">
+		<a class="aui-btn aui-text-danger aui-btn-success aui-pull-left active">取消
+		</a>
+		<a class="aui-btn aui-btn-success aui-pull-right active">发送
+		</a>
+	</header>
+	<div class="aui-content">
+		<textarea rows="5" placeholder="  这一刻的想法..."></textarea>
+		<div class="imgBox clearfix">
+			<div class="picture">
+				<img src="../image/profile.jpg" alt="图片1">
+			</div>
+			<div  id="cameraBtn" class="addBtn">
+				<img src="../image/add.png" alt="">
+			</div>
+		</div>
+		<div class="locate aui-bar aui-bar-nav aui-bar-success">
+			<a href="locate.html" class="aui-btn aui-btn-success aui-pull-left">
+				<span class="aui-iconfont aui-icon-location"></span>华侨大学(厦门校区)
+			</a>
+			<a class="aui-pull-right">
+				<span class="aui-iconfont aui-icon-right"></span>
+			</a>
+		</div>
+	</div>
+	
+	    <!-- 相机点出 -->
+<div id="cameraZone" class="aui-content">
+    <ul class="aui-list-view">
+        <li class="aui-list-view-cell">
+            拍照
+        </li>
+        <li class="aui-list-view-cell">
+            从手机相册选择
+        </li>
+    </ul>
+    <div id="cancelBtn" class="aui-btn aui-btn-block aui-btn-success">取消</div>
+</div>
+<div id="mask"></div>
+<!-- 相机点出 -->
+<script src="../script/showAddPicture.js"></script>
+</body>
+</html>

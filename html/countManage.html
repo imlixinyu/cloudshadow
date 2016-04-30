@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账户管理</title>
+    <link rel="stylesheet" href="../css/aui.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/manage.css">
+</head>
+<body>
+
+    <header class="aui-bar aui-bar-nav aui-bar-success">
+        <a href="mine.html" class="aui-pull-left">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">账户管理</div>
+    </header>
+    <div class="aui-content listTop">
+        <ul class="aui-list-view">
+            <li id="cameraBtn" class="aui-list-view-cell">
+                <a class="aui-arrow-right">
+                    头像
+                    <img class="aui-badge badgeImg" src="../image/profile.jpg" alt="">
+                </a>
+            </li>
+            <li id="nameBtn" class="aui-list-view-cell">
+                <a class="aui-arrow-right">
+                    昵称
+                    <span class="aui-badge">用户名啦啦啦</span>
+                </a>
+            </li>
+            <li id="psdBtn" class="aui-list-view-cell">
+                <a class="aui-arrow-right">
+                    修改密码
+                    <span class="aui-badge">修改</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask" id="mask"></div>
+
+    <!-- 修该昵称弹框 -->
+    <div class="aui-dialog" id="nameDialog">
+        <div class="aui-dialog-header">修改昵称</div>
+        <div class="aui-dialog-body aui-text-left">
+            <input type="text" placeholder="新昵称"></input>
+        </div>
+        <div class="aui-dialog-footer">
+            <div class="aui-dialog-btn aui-text-danger" tapmode onclick="cancel(this)">取消</div>
+            <div class="aui-dialog-btn aui-text-info" tapmode onclick="confirm()">确认</div>
+        </div>
+    </div>
+
+    <!-- 修该密码弹框 -->
+    <div class="aui-dialog" id="psdDialog">
+        <div class="aui-dialog-header">修改密码</div>
+        <div class="aui-dialog-body aui-text-left">
+            <input type="password" placeholder="原密码"></input>
+            <input type="password" placeholder="新密码"></input>
+            <input type="password" placeholder="确认密码"></input>
+        </div>
+        <div class="aui-dialog-footer">
+            <div class="aui-dialog-btn aui-text-danger" tapmode onclick="cancel(this)">取消</div>
+            <div class="aui-dialog-btn aui-text-info" tapmode onclick="confirm()">确认</div>
+        </div>
+    </div>
+
+    <!-- 修改头像 -->
+    <div id="cameraZone" class="aui-content">
+        <ul class="aui-list-view">
+            <li class="aui-list-view-cell">
+                拍照
+            </li>
+            <li class="aui-list-view-cell">
+                从手机相册选择
+            </li>
+        </ul>
+        <div id="cancelBtn" class="aui-btn aui-btn-block aui-btn-success">取消</div>
+    </div>
+    
+    <!-- 相机点出 -->
+    <script src="../script/showAddPicture.js"></script>
+
+    <script type="text/javascript" src="../script/dialog.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("nameBtn").onclick=function (argument) {
+        // body...
+        show(nameDialog);
+    }
+    document.getElementById("psdBtn").onclick=function (argument) {
+        // body...
+        show(psdDialog);
+    }
+</script>
+</body>
+</html>

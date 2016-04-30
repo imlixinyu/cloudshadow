@@ -1,0 +1,81 @@
+header .aui-btn-success.active{
+	background: transparent;
+}
+.userZone{
+	margin: 3%;
+}
+.userZone header{
+	width: 100%;
+	display: table;
+}
+.profileContainer{	
+	width: 18%;
+	display: table-cell;
+}
+.profileContainer img{
+	border-radius: 50%;
+}
+.userMsg{
+	padding-left: 4%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.textcontainer,.imgContainer{
+	margin-left: 18%;
+}
+.imgContainer img{
+	width: 47%;
+	margin: 3% 0;
+}
+.btnGroup .aui-btn .aui-iconfont{
+	margin-right: 0px;
+}
+.btnGroup .aui-pull-right{
+	margin-left: 3%;
+}
+
+/*相机点出部分*/
+#cameraZone{
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	background-color: #FFF;
+	margin-bottom: 0px;
+	z-index: 10;
+}
+#mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(35, 35, 35, 0.3);
+	position: fixed;
+	top: 0;
+}
+
+/*详情页*/
+.fixedBottom{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	margin-bottom: 0;
+}
+.fixedBottom .aui-btn{
+	border-radius: 0px;
+}
+.fixedBottom .aui-btn-outlined{
+	background-color: #fff;
+}
+.commentZone{
+	border-bottom: 1px solid #888;
+}
+.commentZone .profileContainer{
+	width: 10%;
+}
+.commentZone .textcontainer{
+	margin-left: 14%;
+	margin-top: 3%;
+}
+.commentZone .textcontainer p,.commentZone time{
+	font-size: 12px;
+}

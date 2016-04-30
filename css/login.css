@@ -1,0 +1,29 @@
+body{
+	text-align: center;
+	background-color: #eee;
+}
+.profile{
+	overflow: hidden;
+	line-height: 0;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	width: 35%;
+	margin: 18% auto;
+}
+.aui-input-row .aui-input-addon{
+	color: #2ECC71;
+}
+.aui-input-row:first-child:after{
+	border-top: 0px;
+}
+.aui-input-row:last-child:after,.aui-input-row:after{
+	border-bottom: 1px solid #2ECC71;
+}
+.addMargin{
+	margin: 20% auto 5%;
+	width: 90%;
+}
+.registerAddMargin{
+	margin: 13% auto 5%;
+	width: 90%;
+}
